@@ -5,10 +5,11 @@ import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
+
 import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
 
 import { FormsModule } from "@angular/forms";
-
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import { FormsModule } from "@angular/forms";
     CommonModule,
     SharedModule,
     AppRoutingModule,
-    FormsModule ],
+    ComponentsModule,
+    FormsModule
+  ],
   exports: [
     DashboardComponent,
     ProgressComponent,
